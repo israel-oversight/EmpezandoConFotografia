@@ -1,0 +1,193 @@
+body{
+  background-color: black;
+  font-family: 'Dancing Script';
+}
+
+
+header{
+  background-color: #5b7989;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+h1{
+  text-shadow: 2px 2px 2px #02010a;
+  padding-left: 0.5em;
+}
+
+#aInicio{
+  text-decoration: none;
+}
+
+.divHeader{
+  width: 50%;
+}
+
+#divTitle{
+  float: left;
+}
+
+#navMenu{
+  text-align: right;
+}
+
+a{
+  padding: 0.5em;
+  color: white;
+}
+
+#secCentro{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+#imgCentro{
+  width: 80vw;
+  margin-top : 1em;
+  margin-bottom : 1em;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#secImagenes{
+  background-color: #d5c75f;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.imgContenido{
+  width: 30vw;
+  height: 20vw;
+  border: 2px solid black;
+  margin: 1em;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#imgLeft:hover{
+  /*transform: rotate(10deg);*/
+  animation: aniLeft 1.5s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes aniLeft{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(10deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+
+}
+
+#imgRight:hover{
+  /*transform: translate(20px, -5px);*/
+  animation: aniRight 1.5s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes aniRight{
+  0%{
+    transform: translate(0px, 0px);
+  }
+
+  50%{
+    transform: translate(20px, -5px);
+  }
+
+  100%{
+    transform: translate(0px, 0px);
+  }
+
+}
+
+footer{
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+#aAddress{
+  color: black;
+}
+
+.footerCols{
+  box-sizing: border-box;
+  width: 25%;
+  color: black;
+  padding: 0.5em;
+  text-align: left;
+  word-break: break-word;
+}
+
+.logoSedSocial{
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+.aRedesSociales{
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.divRedesSociales{
+    margin: 0.3em;
+    display: table;
+}
+
+@media screen and (max-width: 900px){
+  .divHeader{
+    width: 100%;
+  }
+
+  .imgContenido{
+    width: 80vw;
+    height: 16vh;
+  }
+
+  .footerCols{
+    width: 100%;
+  }
+
+  #divMenu{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #wrapperPpal{
+    animation: aniTop 2s;
+  }
+}
+
+@-webkit-keyframes aniTop{
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+}
